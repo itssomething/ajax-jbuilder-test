@@ -1,0 +1,24 @@
+<div class="container">
+  <div id="edit-user-modal"></div>
+  <div class="row">
+    <div class="col-3">
+      ID
+    </div>
+    <div class="col-3">
+      Name
+    </div>
+    <div class="col-3">
+      Email
+    </div>
+    <div class="col-3">
+      Action
+    </div>
+  </div>
+  <div class="users">
+    <%= render @users %>
+  </div>
+
+  <div class="paginate">
+    <%= paginate @users, remote: true %>
+  </div>
+</div>

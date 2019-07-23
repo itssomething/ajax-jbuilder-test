@@ -1,0 +1,3 @@
+alert('<%= message %>');
+$('#myModal').modal('hide');
+$('#user_<%= @user.id %>').html('<%= j render "user_details", user: @user %>')
